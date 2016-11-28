@@ -1,0 +1,87 @@
+inherited frmMnPrincipal: TfrmMnPrincipal
+  Caption = 'frmMnPrincipal'
+  ClientHeight = 530
+  ClientWidth = 330
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  inherited Layout1: TLayout
+    Size.Width = 330.000000000000000000
+    Size.Height = 530.000000000000000000
+    inherited ToolBar1: TToolBar
+      Size.Width = 330.000000000000000000
+      inherited Rectangle9: TRectangle
+        Size.Width = 332.000000000000000000
+      end
+    end
+  end
+  inherited MultiView1: TMultiView
+    Size.Height = 530.000000000000000000
+    inherited Rct_PrincipalMenu: TRectangle
+      Size.Height = 530.000000000000000000
+      inherited VertScrollBox1: TVertScrollBox
+        Size.Height = 385.000000000000000000
+        Viewport.Width = 249.000000000000000000
+        Viewport.Height = 385.000000000000000000
+        inherited Rectangle1: TRectangle
+          Size.Width = 239.000000000000000000
+          inherited Image1: TImage
+            MultiResBitmap.Height = 96
+            MultiResBitmap.Width = 96
+          end
+        end
+        inherited Rectangle2: TRectangle
+          Size.Width = 239.000000000000000000
+          inherited Image2: TImage
+            MultiResBitmap.Height = 96
+            MultiResBitmap.Width = 96
+          end
+        end
+        inherited Rectangle3: TRectangle
+          Size.Width = 239.000000000000000000
+          inherited Image3: TImage
+            MultiResBitmap.Height = 96
+            MultiResBitmap.Width = 96
+          end
+        end
+        inherited Rectangle4: TRectangle
+          Size.Width = 239.000000000000000000
+          inherited Image4: TImage
+            MultiResBitmap.Height = 96
+            MultiResBitmap.Width = 96
+          end
+        end
+        inherited Rectangle5: TRectangle
+          Size.Width = 239.000000000000000000
+          inherited Image5: TImage
+            MultiResBitmap.Height = 96
+            MultiResBitmap.Width = 96
+          end
+        end
+        inherited recAutorizacoes: TRectangle
+          Size.Width = 239.000000000000000000
+          inherited Image6: TImage
+            MultiResBitmap.Height = 96
+            MultiResBitmap.Width = 96
+          end
+        end
+        inherited Rectangle7: TRectangle
+          Size.Width = 239.000000000000000000
+          inherited Image7: TImage
+            MultiResBitmap.Height = 96
+            MultiResBitmap.Width = 96
+          end
+        end
+        inherited Line1: TLine
+          Size.Width = 239.000000000000000000
+        end
+        inherited Rectangle8: TRectangle
+          Size.Width = 239.000000000000000000
+          inherited Image8: TImage
+            MultiResBitmap.Height = 96
+            MultiResBitmap.Width = 96
+          end
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,43 @@
+unit untCadFunc;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants, 
+  FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls,
+  untPadrao, FMX.Objects, FMX.Layouts, FMX.MultiView, FMX.Controls.Presentation,
+  FMX.Edit;
+
+type
+  TfrmCadFunc = class(TfrmPadrao)
+    VertScrollBox2: TVertScrollBox;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Edit3: TEdit;
+    Edit4: TEdit;
+    Edit5: TEdit;
+    Edit6: TEdit;
+    Edit7: TEdit;
+    Edit8: TEdit;
+    Button1: TButton;
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCadFunc: TfrmCadFunc;
+
+implementation
+
+{$R *.fmx}
+
+procedure TfrmCadFunc.FormCreate(Sender: TObject);
+begin
+  inherited;
+  Label11.Text := 'Cadastro Funcionário';
+end;
+
+end.

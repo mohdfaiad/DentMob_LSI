@@ -1,0 +1,72 @@
+unit untCadFunc;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants, 
+  FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls,
+  untPadrao, FMX.Objects, FMX.Layouts, FMX.MultiView, FMX.Controls.Presentation,
+  FMX.Edit, FMX.AndroidLike.Toast;
+
+type
+  TfrmCadFunc = class(TfrmPadrao)
+    VertScrollBox2: TVertScrollBox;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Edit3: TEdit;
+    Edit4: TEdit;
+    Edit5: TEdit;
+    Edit6: TEdit;
+    Edit7: TEdit;
+    Edit8: TEdit;
+    Button1: TButton;
+    Toast1: TToast;
+    procedure FormCreate(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCadFunc: TfrmCadFunc;
+
+implementation
+
+{$R *.fmx}
+uses
+  untListarFuncionarios;
+
+procedure TfrmCadFunc.Button1Click(Sender: TObject);
+begin
+  inherited;
+  if (Edit1.Text = '') and (Edit2.Text = '') and (Edit3.Text = '') and
+  (Edit4.Text = '') and (Edit5.Text = '') and (Edit6.Text = '') and
+  (Edit7.Text = '') and (Edit8.Text = '') then
+  begin
+    Toast1.Now('Todos os campos são obrigatórios');
+  end
+  else
+  begin
+    Toast1.Now('Cadastrado com Sucesso');
+    frmListarFuncionario.Show;
+    Edit1.Text := '';
+    Edit2.Text := '';
+    Edit3.Text := '';
+    Edit4.Text := '';
+    Edit5.Text := '';
+    Edit6.Text := '';
+    Edit7.Text := '';
+    Edit8.Text := '';
+    frmCadFunc.Close;
+  end;
+end;
+
+procedure TfrmCadFunc.FormCreate(Sender: TObject);
+begin
+  inherited;
+  Label11.Text := 'Cadastro Funcionário';
+end;
+
+end.

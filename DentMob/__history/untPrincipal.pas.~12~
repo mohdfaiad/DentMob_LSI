@@ -1,0 +1,61 @@
+unit untPrincipal;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants, 
+  FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls,
+  untPadrao, FMX.Controls.Presentation, FMX.MultiView, FMX.Layouts, FMX.Objects;
+
+type
+  TfrmMnPrincipal = class(TfrmPadrao)
+    MultiView1: TMultiView;
+    Layout1: TLayout;
+    ToolBar1: TToolBar;
+    SB_Button: TSpeedButton;
+    Rct_MenuTop: TRectangle;
+    VertScrollBox1: TVertScrollBox;
+    Rectangle1: TRectangle;
+    Image1: TImage;
+    Label1: TLabel;
+    Rct_PrincipalMenu: TRectangle;
+    Rectangle2: TRectangle;
+    Image2: TImage;
+    Label2: TLabel;
+    Rectangle3: TRectangle;
+    Image3: TImage;
+    Label3: TLabel;
+    Rectangle4: TRectangle;
+    Image4: TImage;
+    Label4: TLabel;
+    Rectangle5: TRectangle;
+    Image5: TImage;
+    Label5: TLabel;
+    Rectangle6: TRectangle;
+    Image6: TImage;
+    Label6: TLabel;
+    Rectangle7: TRectangle;
+    Image7: TImage;
+    Label7: TLabel;
+    Line1: TLine;
+    Rectangle8: TRectangle;
+    Image8: TImage;
+    Label8: TLabel;
+    Circle1: TCircle;
+    Label9: TLabel;
+    Label10: TLabel;
+    Rectangle9: TRectangle;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmMnPrincipal: TfrmMnPrincipal;
+
+implementation
+
+{$R *.fmx}
+
+end.

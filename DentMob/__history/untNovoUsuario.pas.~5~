@@ -1,0 +1,40 @@
+unit untNovoUsuario;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants, 
+  FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls,
+  untPadrao, FMX.Edit, FMX.Objects, FMX.Layouts, FMX.MultiView,
+  FMX.Controls.Presentation;
+
+type
+  TfrmNovoUsuario = class(TfrmPadrao)
+    VertScrollBox2: TVertScrollBox;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Edit3: TEdit;
+    Edit4: TEdit;
+    Edit5: TEdit;
+    Button1: TButton;
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmNovoUsuario: TfrmNovoUsuario;
+
+implementation
+
+{$R *.fmx}
+
+procedure TfrmNovoUsuario.FormCreate(Sender: TObject);
+begin
+  inherited;
+  Label11.Text := 'Novo Usuário';
+end;
+
+end.

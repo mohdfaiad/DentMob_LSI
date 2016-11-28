@@ -1,0 +1,16 @@
+inherited frmMnPrincipal: TfrmMnPrincipal
+  Caption = 'frmMnPrincipal'
+  ClientHeight = 530
+  ClientWidth = 330
+  DesignerMasterStyle = 3
+  inherited Layout1: TLayout
+    Size.Width = 330.000000000000000000
+    Size.Height = 530.000000000000000000
+    inherited ToolBar1: TToolBar
+      Size.Width = 330.000000000000000000
+      inherited Rectangle9: TRectangle
+        Size.Width = 332.000000000000000000
+      end
+    end
+  end
+end

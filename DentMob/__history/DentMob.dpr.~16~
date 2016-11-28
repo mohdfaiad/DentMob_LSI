@@ -1,0 +1,25 @@
+program DentMob;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  untPadrao in 'untPadrao.pas' {frmPadrao},
+  untPrincipal in 'untPrincipal.pas' {frmMnPrincipal},
+  untLogin in 'untLogin.pas' {frmLogin},
+  untNovoUsuario in 'untNovoUsuario.pas' {frmNovoUsuario},
+  untMeuPerfil in 'untMeuPerfil.pas' {frmMeuPerfil},
+  untProntuario in 'untProntuario.pas' {frmProntuario},
+  untCadFunc in 'untCadFunc.pas' {frmCadFunc},
+  untEmergenciaMedica in 'untEmergenciaMedica.pas' {frmEmergenciaMedica},
+  untPlanejamentoDiario in 'untPlanejamentoDiario.pas' {frmPlanejamentoDiario},
+  untAutAtestado in 'untAutAtestado.pas' {frmAutAtestado},
+  untAgendarConsultas in 'untAgendarConsultas.pas' {frmAgendarConsultas};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TfrmLogin, frmLogin);
+  Application.CreateForm(TfrmPadrao, frmPadrao);
+  Application.Run;
+end.

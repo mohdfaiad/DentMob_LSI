@@ -1,0 +1,89 @@
+unit untPadrao;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Objects,
+  FMX.Ani, FMX.Layouts, FMX.MultiView, FMX.StdCtrls, FMX.Controls.Presentation;
+
+type
+  TfrmPadrao = class(TForm)
+    Layout1: TLayout;
+    ToolBar1: TToolBar;
+    Rectangle9: TRectangle;
+    SB_Button: TSpeedButton;
+    Label11: TLabel;
+    MultiView1: TMultiView;
+    Rct_PrincipalMenu: TRectangle;
+    Rct_MenuTop: TRectangle;
+    Circle1: TCircle;
+    Label9: TLabel;
+    Label10: TLabel;
+    VertScrollBox1: TVertScrollBox;
+    Rectangle1: TRectangle;
+    Image1: TImage;
+    Label1: TLabel;
+    Rectangle2: TRectangle;
+    Image2: TImage;
+    Label2: TLabel;
+    Rectangle3: TRectangle;
+    Image3: TImage;
+    Label3: TLabel;
+    Rectangle4: TRectangle;
+    Image4: TImage;
+    Label4: TLabel;
+    Rectangle5: TRectangle;
+    Image5: TImage;
+    Label5: TLabel;
+    Rectangle6: TRectangle;
+    Image6: TImage;
+    Label6: TLabel;
+    Rectangle7: TRectangle;
+    Image7: TImage;
+    Label7: TLabel;
+    Line1: TLine;
+    Rectangle8: TRectangle;
+    Image8: TImage;
+    Label8: TLabel;
+    procedure Rectangle8Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPadrao: TfrmPadrao;
+
+implementation
+
+{$R *.fmx}
+//uses
+  //Androidapi.Helpers;
+uses
+  untMeuPerfil;
+
+procedure TfrmPadrao.Rectangle8Click(Sender: TObject);
+var CanClose: Boolean;
+begin
+ { CanClose := False;
+  MessageDlg('Deseja realmente fechar a aplicação desenvolvida no Delphi XE7?',
+    System.UITypes.TMsgDlgType.mtInformation,
+    [System.UITypes.TMsgDlgBtn.mbYes, System.UITypes.TMsgDlgBtn.mbNo], 0,
+    procedure(const BotaoPressionado: TModalResult)
+      begin
+        case BotaoPressionado of
+          mrYes: begin
+              SharedActivity.Finish;
+            end;
+          mrNo: begin
+              ShowMessage('Você respondeu não');
+            end;
+        end;
+      end
+    );        }
+
+end;
+
+end.

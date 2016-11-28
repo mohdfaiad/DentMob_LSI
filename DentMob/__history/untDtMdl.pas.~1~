@@ -1,0 +1,25 @@
+unit untDtMdl;
+
+interface
+
+uses
+  System.SysUtils, System.Classes;
+
+type
+  TDtMdl = class(TDataModule)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  DtMdl: TDtMdl;
+
+implementation
+
+{%CLASSGROUP 'FMX.Controls.TControl'}
+
+{$R *.dfm}
+
+end.

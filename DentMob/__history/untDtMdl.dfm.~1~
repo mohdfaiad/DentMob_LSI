@@ -1,0 +1,5 @@
+object DtMdl: TDtMdl
+  OldCreateOrder = False
+  Height = 291
+  Width = 471
+end

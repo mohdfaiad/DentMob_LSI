@@ -1,0 +1,40 @@
+program DentMob;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  untPadrao in 'untPadrao.pas' {frmPadrao},
+  untPrincipal in 'untPrincipal.pas' {frmMnPrincipal},
+  untMeuPerfil in 'untMeuPerfil.pas' {frmMeuPerfil},
+  untProntuario in 'untProntuario.pas' {frmProntuario},
+  untCadFunc in 'untCadFunc.pas' {frmCadFunc},
+  untEmergenciaMedica in 'untEmergenciaMedica.pas' {frmEmergenciaMedica},
+  untPlanejamentoDiario in 'untPlanejamentoDiario.pas' {frmPlanejamentoDiario},
+  untAutAtestado in 'untAutAtestado.pas' {frmAutAtestado},
+  untAgendarConsultas in 'untAgendarConsultas.pas' {frmAgendarConsultas},
+  untNovoUsuario in 'untNovoUsuario.pas' {frmNovoUsuario},
+  untLogin in 'untLogin.pas' {frmLogin},
+  untListarFuncionarios in 'untListarFuncionarios.pas' {frmListarFuncionario},
+  untDetailFunc in 'untDetailFunc.pas' {frmDetailFunc},
+  untDtMdl in 'untDtMdl.pas' {DtMdl: TDataModule};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TfrmLogin, frmLogin);
+  Application.CreateForm(TfrmPadrao, frmPadrao);
+  Application.CreateForm(TfrmMnPrincipal, frmMnPrincipal);
+  Application.CreateForm(TfrmMeuPerfil, frmMeuPerfil);
+  Application.CreateForm(TfrmProntuario, frmProntuario);
+  Application.CreateForm(TfrmCadFunc, frmCadFunc);
+  Application.CreateForm(TfrmEmergenciaMedica, frmEmergenciaMedica);
+  Application.CreateForm(TfrmPlanejamentoDiario, frmPlanejamentoDiario);
+  Application.CreateForm(TfrmAutAtestado, frmAutAtestado);
+  Application.CreateForm(TfrmAgendarConsultas, frmAgendarConsultas);
+  Application.CreateForm(TfrmNovoUsuario, frmNovoUsuario);
+  Application.CreateForm(TfrmListarFuncionario, frmListarFuncionario);
+  Application.CreateForm(TfrmDetailFunc, frmDetailFunc);
+  Application.CreateForm(TDtMdl, DtMdl);
+  Application.Run;
+end.

@@ -1,0 +1,49 @@
+unit untNovoUsuario;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
+  FMX.Objects, FMX.Controls.Presentation, FMX.Edit, FMX.Layouts;
+
+type
+  TfrmNovoUsuario = class(TForm)
+    VertScrollBox2: TVertScrollBox;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Edit3: TEdit;
+    Edit4: TEdit;
+    Edit5: TEdit;
+    Button1: TButton;
+    ToolBar1: TToolBar;
+    Rectangle9: TRectangle;
+    Label11: TLabel;
+    SB_Button: TSpeedButton;
+    procedure SB_ButtonClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmNovoUsuario: TfrmNovoUsuario;
+
+implementation
+
+{$R *.fmx}
+uses
+  untLogin;
+
+procedure TfrmNovoUsuario.SB_ButtonClick(Sender: TObject);
+begin
+  frmLogin.Show;
+  Edit1.Text := '';
+  Edit2.Text := '';
+  Edit3.Text := '';
+  Edit4.Text := '';
+  Edit5.Text := '';
+end;
+
+end.
